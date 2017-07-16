@@ -34,33 +34,6 @@ if(development) {
     endpoint = "http://192.168.0.5:3000/v1/summary";
 }
 
-
-// var stops = [{
-//         name: "UNSW > Central",
-//         query: endpoint + "?stop=203220&routes=391,393,395,M10&num=3",
-//         lat: -33.9196156,
-//         long: 151.2264216
-//     },
-//     {
-//         name: "UNSW > Coogee",
-//         query: endpoint + "?stop=203255&routes=370&num=3",
-//         lat: -33.9196156,
-//         long: 151.2264216
-//     },
-//     {
-//         name: "Central > UNSW",
-//         query:endpoint + "?stop=200053&routes=391,393,395,M10&num=3",
-//         lat:-33.8826211,
-//         long:151.2057309
-//     },
-//     {
-//         name: "Coogee > UNSW",
-//         query:endpoint + "?stop=203471&routes=370&num=3",
-//         lat: -33.9206252,
-//         long:151.2568289
-//     }
-// ];
-
 var stops = [{
         name: "UNSW > Central",
         query: endpoint + "?stop=203220&routes=391,393,395,M10&num=3",
@@ -91,6 +64,14 @@ var stops = [{
         location: {
             latitude: -33.9206252,
             longitude:151.2568289
+        }
+    },
+    {
+        name: "Elizabeth St > UNSW",
+        query: endpoint + "?stop=201080&routes=393,395&num=3",
+        location: {
+            latitude: -33.8847019,
+            longitude: 151.2081744
         }
     }
 ];
